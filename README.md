@@ -132,6 +132,11 @@ return $input.all().map((item, index) => {
 
 ## 5. Condicional de compatibilidade
 
+Código:
+```
+{{ $json.score }}
+```
+
 <img width="675" height="299" alt="Captura de Tela 2026-08-19 às 16 20 43" src="https://github.com/user-attachments/assets/e276b2d9-d623-4c7a-b111-d3837832316e" />
 
 ## 6. Carta de apresentação para cada vaga com IA:
@@ -164,21 +169,21 @@ Código:
 
 ```
 🎯 *NOVA VAGA COMPATÍVEL ENCONTRADA!*
-📌 *Vaga:* {{ $('Parse Groq JSON').item.json.title }}
-🏢 *Empresa:* {{ $('Parse Groq JSON').item.json.company }}
-📍 *Local:* {{ $('Parse Groq JSON').item.json.location }}
-📊 *Score de Aderência:* {{ $('Parse Groq JSON').item.json.score }}/100
+📌 *Vaga:* {{ $('Code in JavaScript1').item.json.title }}
+🏢 *Empresa:* {{ $('Code in JavaScript1').item.json.company }}
+📍 *Local:* {{ $('Code in JavaScript1').item.json.location }}
+📊 *Score de Aderência:* {{ $('Code in JavaScript1').item.json.score }}/100
 
-💡 *Resumo:* _{{ $('Parse Groq JSON').item.json.resumo_vaga }}_
+💡 *Resumo:* _{{ $('Code in JavaScript1').item.json.resumo_vaga }}_
 
 ✅ *Pontos Fortes:
-*• {{ Array.isArray($('Parse Groq JSON').item.json.pontos_fortes) ? $('Parse Groq JSON').item.json.pontos_fortes.join('\n• ') : $('Parse Groq JSON').item.json.pontos_fortes }}
+*• {{ Array.isArray($('Code in JavaScript1').item.json.pontos_fortes) ? $('Code in JavaScript1').item.json.pontos_fortes.join('\n• ') : $('Code in JavaScript1').item.json.pontos_fortes }}
 
 ✉️ *Sugestão de Carta de Apresentação:
 
 *
 {{ $json.text }}
 
-🔗 [Clique aqui para abrir e aplicar na vaga]({{ $('Parse Groq JSON').item.json.url }})
+🔗 [Clique aqui para abrir e aplicar na vaga]({{ $('Code in JavaScript1').item.json.url }})
 ```
 <img width="413" height="249" alt="Captura de Tela 2026-08-19 às 16 24 47" src="https://github.com/user-attachments/assets/17e2c061-7c6d-46df-a492-34e9771d0cdb" />
